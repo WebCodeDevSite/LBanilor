@@ -27,6 +27,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .Logo{
@@ -55,6 +56,10 @@ body{
     margin-top: 50px;
 }
 
+.editor:hover{
+    width: 93vw;
+}
+
 .claseEditor{
     height: auto;
     width: auto;
@@ -65,13 +70,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .case{
     width: auto;
     height: auto;
-    margin: 20px;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,7 +175,7 @@ img{
 }
 
 .continut:hover{
-    opacity: 1;
+    width: 93vw;
 }
 
 hr{
@@ -201,7 +206,9 @@ button{
 }
 
 .cinesunt{
-    width: 100%;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -322,9 +329,11 @@ button{
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 95vw;
+    flex-direction: row;
+    width: 90vw;
     border-radius: 20px;
     background: rgba(0, 0, 0, .5);
 }
@@ -401,6 +410,7 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     width: 80vw;
     height: auto;
     margin-left: auto;
@@ -557,6 +567,8 @@ button{
     margin-right: auto;
     background: rgba(0, 0, 0, .5);
     border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .exemple h1{
@@ -568,6 +580,7 @@ button{
 
 .pozeexemple{
     display: flex;
+    flex-direction: row;
     height: auto;
     width: 80%;
     justify-content: space-around;
@@ -578,4 +591,171 @@ button{
 .pexemple{
     width: 250px;
     height: 250px;
+}
+
+.descriereSite{
+    display: flex;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.descriereSite h1{
+    color: white;
+}
+
+.descriereSite h3{
+    color: white;
+    margin-top: 0;
+}
+
+.code{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.clasecode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clasecode i{
+    font-size: 3em;
+}
+
+.clasecode h3{
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.codesubtitle {
+    color: #FFD700;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.butonsiteuri{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    font-size: 1em;
+}
+
+.followers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40vw;
+    background: rgba(0, 0, 0, .5);
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10%;
+    color: white;
+    border: 1px solid #FFD700;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.followers h2{
+    margin-bottom: 0;
+}
+
+.bara{
+    width: 80%;
+    background: transparent;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.barap{
+    width: 61%;
+    height: 10px;
+    background-color: #FFD700;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.baran{
+    width: 49%;
+    height: 10px;
+    background-color: gray;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.progres{
+    display: flex;
+    justify-content: flex-start;
+    width: 80vw;
+    height: auto;
+    background: rgba(0, 0, 0, .5);
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.progres i{
+    color: #FFD700;
+    font-size: 5em;
+    margin-left: .5%;
+}
+
+.evenimente{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    color: white;
+}
+
+.evenimente i{
+    color: #FFD700;
+    font-size: 2.5em;
+}
+
+.imgmare{
+    height: 400px;
+    width: 800px;
+}
+
+.getit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    color: white;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .cinesunt h2{
+        font-size: 1em;
+    }
+
+    .freestuff{
+        flex-direction: column;
+    }
 }
